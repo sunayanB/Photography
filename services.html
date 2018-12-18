@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- Bootstrap CSS -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
+    <title>Click Ready</title>
+</head>
+<body>
+
+<!--Markup to Header-->
+<header class="fixed-top black">
+    <div class="container">
+        <nav id="main-nav" class="nav navbar-expand-lg navbar-expand-md">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo Item" > <span class="sr-only">(current)</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <main id="menu" class="collapse navbar-collapse justify-content-end">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="combo.html">COMBO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">CONTACTS</a>
+                    </li>
+                </ul>
+            </main>
+        </nav>
+    </div>
+</header>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+                $(".black").css("background" , "#343a40").css("box-shadow" , "0 0 7px 0 #000000");
+            }
+            else{
+                $(".black").css("background" , "transparent")
+                    .css("box-shadow" , "none");
+            }
+        })
+    })
+</script>
+
+</body>
+</html>
